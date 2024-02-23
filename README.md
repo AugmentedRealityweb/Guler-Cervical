@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('fundal.jpg'); /* Actualizare la noua imagine de fundal */
+            background-image: url('fundal2.jpg'); /* Actualizare la noua imagine de fundal */
             background-size: cover;
             background-position: center;
             display: flex;
@@ -54,13 +55,18 @@
             background-color: #0056b3;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-        .navigation-buttons {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            margin-top: 20px;
+        p {
+            margin-top: 10px;
+            color: #FFFFFF;
+            font-size: 1.2em;
         }
-        a {
+        .back-button {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 20px;
+        }
+        .back-link {
             text-decoration: none;
             color: white;
             background-color: #007BFF;
@@ -68,13 +74,8 @@
             border-radius: 20px;
             transition: background-color 0.3s;
         }
-        a:hover {
+        .back-link:hover {
             background-color: #0056b3;
-        }
-        p {
-            margin-top: 10px;
-            color: #FFFFFF;
-            font-size: 1.2em;
         }
     </style>
 </head>
@@ -98,11 +99,11 @@
         </model-viewer>
         <p>Cactus Cary</p>
     </div>
-    <!-- Model 2: Noodle -->
+    <!-- Model 2: Guler -->
     <div class="model-section">
         <model-viewer 
-            src="noodle.glb" 
-            ios-src="noodle.usdz" 
+            src=guler2.glb" 
+            ios-src="guler2.usdz" 
             ar 
             ar-modes="webxr scene-viewer quick-look" 
             camera-controls 
@@ -113,7 +114,7 @@
             max-camera-orbit="auto 80deg auto">
             <button slot="ar-button" class="ar-button">Activează modul AR</button>
         </model-viewer>
-        <p>Noodle Pack</p>
+        <p>Guler Cervical</p>
     </div>
     <!-- Model 3: Scaun -->
     <div class="model-section">
@@ -134,9 +135,8 @@
     </div>
 </div>
 
-<div class="navigation-buttons">
-    <a href="https://augmentedrealityweb.github.io/Produse/">Pagina Precedentă</a>
-    <a href="https://augmentedrealityweb.github.io/Produse/">Pagina Următoare</a>
+<div class="back-button">
+    <a href="https://augmentedrealityweb.github.io/toate-produsele/" class="back-link">Înapoi la meniul principal</a>
 </div>
 
 </body>
