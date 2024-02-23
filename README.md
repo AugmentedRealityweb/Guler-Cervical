@@ -32,8 +32,8 @@
             text-align: center;
         }
         model-viewer {
-            width: 200px; /* Dimensiuni actualizate pentru toate modelele */
-            height: 200px; /* Dimensiuni actualizate pentru toate modelele */
+            width: 170px; /* Dimensiuni actualizate pentru toate modelele */
+            height: 170px; /* Dimensiuni actualizate pentru toate modelele */
             margin: 0 auto;
         }
         .ar-button {
