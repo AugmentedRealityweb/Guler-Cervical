@@ -32,13 +32,9 @@
             text-align: center;
         }
         model-viewer {
-            width: 200px;
-            height: 200px;
+            width: 150px; /* Dimensiuni actualizate pentru toate modelele */
+            height: 150px; /* Dimensiuni actualizate pentru toate modelele */
             margin: 0 auto;
-        }
-        .small-model model-viewer {
-            width: 150px;
-            height: 150px;
         }
         .ar-button {
             display: flex;
@@ -120,8 +116,8 @@
         </model-viewer>
         <p>Guler Cervical</p>
     </div>
-    <!-- Model 3: Scaun - cu dimensiuni mai mici -->
-    <div class="model-section small-model">
+    <!-- Model 3: Scaun -->
+    <div class="model-section">
         <model-viewer 
             src="scaun.glb" 
             ios-src="scaun.usdz" 
