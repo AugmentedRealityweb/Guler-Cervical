@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('fundal2.jpg'); /* Actualizare la noua imagine de fundal */
+            background-image: url('fundal2.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -35,6 +35,10 @@
             width: 200px;
             height: 200px;
             margin: 0 auto;
+        }
+        .small-model model-viewer {
+            width: 150px;
+            height: 150px;
         }
         .ar-button {
             display: flex;
@@ -116,8 +120,8 @@
         </model-viewer>
         <p>Guler Cervical</p>
     </div>
-    <!-- Model 3: Scaun -->
-    <div class="model-section">
+    <!-- Model 3: Scaun - cu dimensiuni mai mici -->
+    <div class="model-section small-model">
         <model-viewer 
             src="scaun.glb" 
             ios-src="scaun.usdz" 
