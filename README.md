@@ -102,7 +102,7 @@
     <!-- Model 2: Guler -->
     <div class="model-section">
         <model-viewer 
-            src=guler2.glb" 
+            src="guler2.glb" 
             ios-src="guler2.usdz" 
             ar 
             ar-modes="webxr scene-viewer quick-look" 
