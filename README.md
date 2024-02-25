@@ -20,9 +20,9 @@
 
     .model-container {
       display: flex;
-      flex-wrap: wrap; /* Optimize layout for multiple models */
+      flex-wrap: wrap;
       justify-content: center;
-      max-width: 800px; /* Adjust for larger screens */
+      max-width: 800px;
     }
 
     .model-section {
@@ -34,6 +34,8 @@
       width: 170px;
       height: 170px;
       margin: 0 auto;
+      --model-viewer-auto-rotate-delay: 3s;
+      --model-viewer-camera-controls-touch-action: pan-y;
     }
 
     .ar-button,
@@ -63,18 +65,13 @@
       color: #FFFFFF;
       font-size: 1.2em;
     }
-
-    .back-button {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      padding: 20px;
-    }
   </style>
+  <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
 </head>
 <body>
 
 <div class="model-container">
+  <!-- Model 1 -->
   <div class="model-section">
     <model-viewer
       src="cactus.glb"
@@ -85,13 +82,14 @@
       auto-rotate
       environment-image="neutral"
       shadow-intensity="1"
-      min-camera-orbit="auto 0deg 0deg"
-      max-camera-orbit="auto 80deg auto">
+      loading="lazy"
+      alt="Cactus Cary">
       <button slot="ar-button" class="ar-button">Activează modul AR</button>
     </model-viewer>
     <p>Cactus Cary</p>
   </div>
 
+  <!-- Model 2 -->
   <div class="model-section">
     <model-viewer
       src="guler2.glb"
@@ -102,16 +100,32 @@
       auto-rotate
       environment-image="neutral"
       shadow-intensity="1"
-      min-camera-orbit="auto 0deg 0deg"
-      max-camera-orbit="auto 80deg auto">
+      loading="lazy"
+      alt="Guler Cervical">
       <button slot="ar-button" class="ar-button">Activează modul AR</button>
     </model-viewer>
     <p>Guler Cervical</p>
   </div>
 
+  <!-- Model 3 -->
   <div class="model-section">
     <model-viewer
       src="scaun.glb"
       ios-src="scaun.usdz"
       ar
-      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      auto-rotate
+      environment-image="neutral"
+      shadow-intensity="1"
+      loading="lazy"
+      alt="Scaun">
+      <button slot="ar-button" class="ar-button">Activează modul AR</button>
+    </model-viewer>
+    <p>Scaun</p>
+  </div>
+  <!-- Adaugă aici alte secțiuni de modele după necesități -->
+</div>
+
+</body>
+</html>
