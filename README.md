@@ -1,8 +1,9 @@
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modele AR Optimizate</title>
+  <title>Modele AR Optimizate - Guler Cervical</title>
   <style>
     body {
       margin: 0;
@@ -39,13 +40,12 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
-    .ar-button,
-    .back-link {
+    .ar-button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 10px 15px;
-      font-size: 1rem;
+      padding: 8px 12px; /* Redus pentru un buton mai mic */
+      font-size: 0.8rem; /* Redus pentru a se potrivi cu dimensiunea butonului */
       cursor: pointer;
       background-color: #007BFF;
       border: none;
@@ -55,8 +55,7 @@
       transition: background-color 0.3s, box-shadow 0.3s;
     }
 
-    .ar-button:hover,
-    .back-link:hover {
+    .ar-button:hover {
       background-color: #0056b3;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
@@ -72,11 +71,11 @@
 <body>
 
 <div class="model-container">
-  <!-- Model 1 -->
+  <!-- Guler Cervical -->
   <div class="model-section">
     <model-viewer
-      src="cactus.glb"
-      ios-src="cactus.usdz"
+      src="guler2.glb"
+      ios-src="guler2.usdz"
       ar
       ar-modes="webxr scene-viewer quick-look"
       camera-controls
@@ -84,10 +83,12 @@
       environment-image="neutral"
       shadow-intensity="1"
       loading="lazy"
-      alt="Cactus Cary">
-      <button slot="ar-button" class="ar-button">Activează modul AR</button>
+      alt="Guler Cervical"
+      min-camera-orbit="auto 0deg 0deg"
+      max-camera-orbit="auto 80deg auto">
+      <button slot="ar-button" class="ar-button">AR</button>
     </model-viewer>
-    <p>Cactus Cary</p>
+    <p>Guler Cervical</p>
   </div>
 </div>
 
