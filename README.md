@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -17,18 +16,15 @@
       align-items: center;
       height: 100vh;
     }
-
     .model-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-
     .model-section {
       text-align: center;
     }
-
     model-viewer {
       width: 250px;
       height: 250px;
@@ -38,7 +34,6 @@
       --model-viewer-auto-rotate-delay: 3s;
       --model-viewer-camera-controls-touch-action: pan-y;
     }
-
     .ar-button {
       padding: 5px 10px;
       font-size: 0.8rem;
@@ -50,7 +45,6 @@
       cursor: pointer;
       transition: background-color 0.3s, box-shadow 0.3s;
     }
-
     .back-link {
       display: inline-block;
       padding: 5px 10px;
@@ -63,14 +57,12 @@
       cursor: pointer;
       transition: background-color 0.3s, box-shadow 0.3s;
     }
-
-    .ar-button:hover,
+.ar-button:hover,
     .back-link:hover {
       background-color: #0056b3;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
-
-    p {
+p {
       color: #FFFFFF;
       font-size: 1.2em;
       margin-top: 10px;
@@ -79,7 +71,6 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
 </head>
 <body>
-
 <div class="model-container">
   <!-- Model Guler Cervical -->
   <div class="model-section">
@@ -98,10 +89,8 @@
       max-camera-orbit="auto 80deg auto">
       <button slot="ar-button" class="ar-button">Activează modul AR</button>
     </model-viewer>
-    <p>Guler Cervical</p>
   </div>
   <a href="https://augmentedrealityweb.github.io/toate-produsele/" class="back-link">Înapoi la meniul principal</a>
 </div>
-
 </body>
 </html>
