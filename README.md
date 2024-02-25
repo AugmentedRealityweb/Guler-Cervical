@@ -31,11 +31,13 @@
     }
 
     model-viewer {
-      width: 170px;
-      height: 170px;
+      width: 250px; /* Mărit pentru a oferi o vizualizare mai clară */
+      height: 250px; /* Mărit pentru a oferi o vizualizare mai clară */
       margin: 0 auto;
       --model-viewer-auto-rotate-delay: 3s;
       --model-viewer-camera-controls-touch-action: pan-y;
+      border-radius: 20px; /* Adăugat pentru a avea colțuri rotunjite */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adăugat pentru a adăuga o umbră, pentru un aspect mai estetic */
     }
 
     .ar-button,
@@ -43,8 +45,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 5px 10px;
-      font-size: 0.8rem;
+      padding: 10px 15px; /* Modificat pentru a oferi butoanelor o dimensiune mai mare și mai confortabilă */
+      font-size: 1rem; /* Mărit pentru a îmbunătăți lizibilitatea */
       cursor: pointer;
       background-color: #007BFF;
       border: none;
