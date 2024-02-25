@@ -20,13 +20,12 @@
 
     .model-container {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      max-width: 800px;
     }
 
     .model-section {
-      margin: 10px;
       text-align: center;
     }
 
@@ -34,36 +33,47 @@
       width: 250px;
       height: 250px;
       margin: 0 auto;
-      --model-viewer-auto-rotate-delay: 3s;
-      --model-viewer-camera-controls-touch-action: pan-y;
       border-radius: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      --model-viewer-auto-rotate-delay: 3s;
+      --model-viewer-camera-controls-touch-action: pan-y;
     }
 
     .ar-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8px 12px; /* Redus pentru un buton mai mic */
-      font-size: 0.8rem; /* Redus pentru a se potrivi cu dimensiunea butonului */
-      cursor: pointer;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      margin-top: 10px;
       background-color: #007BFF;
+      color: white;
       border: none;
       border-radius: 20px;
-      color: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
       transition: background-color 0.3s, box-shadow 0.3s;
     }
 
-    .ar-button:hover {
+    .back-link {
+      display: inline-block;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      margin-top: 50px; /* Distanța față de model */
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .ar-button:hover,
+    .back-link:hover {
       background-color: #0056b3;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     p {
-      margin-top: 10px;
       color: #FFFFFF;
       font-size: 1.2em;
+      margin-top: 10px;
     }
   </style>
   <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
@@ -71,7 +81,7 @@
 <body>
 
 <div class="model-container">
-  <!-- Guler Cervical -->
+  <!-- Model Guler Cervical -->
   <div class="model-section">
     <model-viewer
       src="guler2.glb"
@@ -86,10 +96,11 @@
       alt="Guler Cervical"
       min-camera-orbit="auto 0deg 0deg"
       max-camera-orbit="auto 80deg auto">
-      <button slot="ar-button" class="ar-button">AR</button>
+      <button slot="ar-button" class="ar-button">Activează modul AR</button>
     </model-viewer>
     <p>Guler Cervical</p>
   </div>
+  <a href="https://augmentedrealityweb.github.io/toate-produsele/" class="back-link">Înapoi la meniul principal</a>
 </div>
 
 </body>
