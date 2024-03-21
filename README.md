@@ -23,6 +23,7 @@
  }
  .model-section {
   text-align: center;
+ margin-top: 38px; /* Mută modelul 3D cu aproximativ 1cm mai jos */
  }
  model-viewer {
   width: 188px;
@@ -30,7 +31,7 @@
   margin: 0 auto;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  --model-viewer-auto-rotate-delay: 3s;
+  --model-viewer-auto-rotate-delay: 2s;
   --model-viewer-camera-controls-touch-action: pan-y;
  }
  .ar-button {
@@ -92,4 +93,3 @@ p {
  <a href="https://augmentedrealityweb.github.io/toate-produsele/" class="back-link">Înapoi la meniul principal</a>
 </div>
 </body>
-</html>
