@@ -83,7 +83,6 @@ p {
    environment-image="neutral"
    shadow-intensity="1"
    loading="lazy"
-   alt="Guler Cervical"
    min-camera-orbit="auto 0deg 0deg"
    max-camera-orbit="auto 80deg auto">
    <button slot="ar-button" class="ar-button">Activează modul AR</button>
