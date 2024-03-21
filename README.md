@@ -1,7 +1,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Modele AR Optimizate - Guler Cervical</title>
+ <title>Modele AR Optimizate
  <style>
   body {
    margin: 0;
