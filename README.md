@@ -7,7 +7,7 @@
    margin: 0;
    padding: 0;
    font-family: Arial, sans-serif;
-   background-image: url('fundal3.png');
+   background-image: url('fundal4.jpg');
    background-size: cover;
    background-position: center;
    display: flex;
