@@ -53,7 +53,7 @@
   color: white;
   text-decoration: none;
   border-radius: 20px;
-  margin-top: 50px; /* Distanța față de model */
+  margin-top: 50px - 57px; /* Distanța față de model */
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
  }
