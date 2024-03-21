@@ -25,8 +25,8 @@
    text-align: center;
   }
   model-viewer {
-   width: 250px;
-   height: 250px;
+   width: 188px;
+   height: 188px;
    margin: 0 auto;
    border-radius: 20px;
    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
