@@ -1,3 +1,4 @@
+<html lang="ro">
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,22 @@
   background-image: url('fundal7.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: scroll; /* Asigură că pe mobil imaginea se derulează cu pagina */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
  }
+ 
+ @media (min-width: 768px) {
+   body {
+     background-image: url('fundal7.jpg');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed; /* Efect fix pe desktop */
+   }
+ }
+
  .model-container {
   display: flex;
   flex-direction: column;
@@ -23,7 +35,7 @@
  }
  .model-section {
   text-align: center;
- margin-top: 38px; /* Mută modelul 3D cu aproximativ 1cm mai jos */
+  margin-top: 38px; /* Mută modelul 3D cu aproximativ 1cm mai jos */
  }
  model-viewer {
   width: 188px;
@@ -53,7 +65,7 @@
   color: white;
   text-decoration: none;
   border-radius: 20px;
-  margin-top: 50px - 57px; /* Distanța față de model */
+  margin-top: -7px; /* Ajustat pentru a muta textul mai sus */
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
  }
